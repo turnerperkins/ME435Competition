@@ -2,30 +2,33 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="22"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="tvdpi"
     format="10"
     plugin-version="3.1.0"
-    timestamp="1524591909645"
+    timestamp="1524594284681"
     token="5922866800571792059"
-    verifier="COMPATIBLE" >
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="475" />
+        duration="547" />
     <task
         name="instant-run-dex"
-        duration="440" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="35" />
+        duration="69" />
     <task
         name="verifier"
-        duration="11" />
+        duration="57" />
 
     <artifact
-        location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -69,28 +72,23 @@
             type="SPLIT" />
     </build>
     <build
-        build-mode="HOT_WARM"
-        timestamp="1524591830655"
-        verifier="COMPATIBLE" >
+        build-mode="COLD"
+        timestamp="1524592862565"
+        verifier="METHOD_ADDED" >
         <artifact
-            location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\builds\debug\1524591830655\classes.dex"
-            type="RELOAD_DEX" />
+            location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
-        build-mode="HOT_WARM"
-        timestamp="1524591869962"
-        verifier="COMPATIBLE" >
+        build-mode="COLD"
+        timestamp="1524594284681"
+        verifier="CLASS_ADDED" >
         <artifact
-            location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\builds\debug\1524591869962\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1524591909645"
-        verifier="COMPATIBLE" >
+            location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
         <artifact
-            location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
+            location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

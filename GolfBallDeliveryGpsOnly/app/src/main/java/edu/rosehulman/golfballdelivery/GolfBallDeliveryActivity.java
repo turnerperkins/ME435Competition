@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -27,7 +28,7 @@ public class GolfBallDeliveryActivity extends RobotActivity {
 	    READY_FOR_MISSION, NEAR_BALL_SCRIPT, DRIVE_TOWARDS_FAR_BALL, FAR_BALL_SCRIPT, DRIVE_TOWARDS_HOME, WAITING_FOR_PICKUP, SEEKING_HOME
     }
 
-    private State mState;
+    public State mState;
 
     /**
      * An enum used for variables when a ball color needs to be referenced.
@@ -243,8 +244,15 @@ public class GolfBallDeliveryActivity extends RobotActivity {
 	
 	
 	// --------------------------- Drive command ---------------------------
-	
-	
+
+    @Override
+    public void sendWheelSpeed(int leftDutyCycle, int rightDutyCycle) {
+        super.sendWheelSpeed(leftDutyCycle, rightDutyCycle);
+
+        mLeftDutyCycleTextView.setText("Left\n" + leftDutyCycle);
+        mRightDutyCycleTextView.setText("Right\n" + rightDutyCycle);
+    }
+
 
     // --------------------------- Sensor listeners ---------------------------
 
@@ -455,11 +463,33 @@ public class GolfBallDeliveryActivity extends RobotActivity {
     public void handleGoOrMissionComplete(View view) {
         if (mState == State.READY_FOR_MISSION) {
             mMatchStartTime = System.currentTimeMillis();
+            updateMissionStrategyVariables();
             mGoOrMissionCompleteButton.setBackgroundResource(R.drawable.red_button);
             mGoOrMissionCompleteButton.setText("Mission Complete!");
             setState(State.NEAR_BALL_SCRIPT);
         } else {
             setState(State.READY_FOR_MISSION);
         }
+    }
+
+    private void updateMissionStrategyVariables() {
+        mNearBallGpsY = -50;
+        mFarBallGpsY = 50;
+        mNearBallLocation = 1;
+        mWhiteBallLocation = 0;
+        mFarBallLocation = 3;
+
+        // Example of how you might write this code...
+        for (int i = 0; i < 3; i++) {
+            BallColor currentLocationColor = mLocationColors[i];
+            if (currentLocationColor == BallColor.WHITE) {
+                mWhiteBallLocation = i + 1;
+            }
+        }
+
+        Log.d(TAG, "Near ball location: " + mNearBallLocation + " drop off at " + mNearBallGpsY);
+        Log.d(TAG, "Far ball location: " + mFarBallLocation + " drop off at " + mFarBallGpsY);
+        Log.d(TAG, "White ball location: " + mWhiteBallLocation);
+
     }
 }
