@@ -1,0 +1,4 @@
+#Tue Apr 24 13:17:03 EDT 2018
+base.0=C\:\\Users\\perkints\\Documents\\GitHub\\ME435Competition\\GolfBallDeliveryGpsOnly\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+path.0=classes.dex
+renamed.0=classes.dex
