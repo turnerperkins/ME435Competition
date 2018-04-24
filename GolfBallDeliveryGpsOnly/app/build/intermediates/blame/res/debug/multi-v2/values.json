@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\perkints\\Documents\\GitHub\\GolfBallDeliveryGpsOnly\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\perkints\\Documents\\GitHub\\ME435Competition\\GolfBallDeliveryGpsOnly\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\perkints\\Documents\\GitHub\\GolfBallDeliveryGpsOnly\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\perkints\\Documents\\GitHub\\ME435Competition\\GolfBallDeliveryGpsOnly\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "3,1,18,21,15,13,14,23,19,17,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\perkints\\Documents\\GitHub\\GolfBallDeliveryGpsOnly\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "C:\\Users\\perkints\\Documents\\GitHub\\ME435Competition\\GolfBallDeliveryGpsOnly\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

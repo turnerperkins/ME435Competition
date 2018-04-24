@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\perkints\\Documents\\GitHub\\GolfBallDeliveryGpsOnly\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "outputFile": "C:\\Users\\perkints\\Documents\\GitHub\\ME435Competition\\GolfBallDeliveryGpsOnly\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\perkints\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\88f179e34dd930cc6535c3cd825e0ece\\res\\values-pt-rPT\\values-pt-rPT.xml",
