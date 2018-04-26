@@ -38,7 +38,8 @@ public class Scripts {
         double distanceToNearBall = NavUtils.getDistance(15,0,90,50); // Could use mCurrentGPSX and mCurrentGPSY
         long driveTimeMs = (long) (distanceToNearBall / RobotActivity.DEFAULT_SPEED_FT_PER_SEC * 1000);
 
-        // For testing, make it shorter.
+        // For testing, this has been made shorter.
+        driveTimeMs = 3000;
 
         mActivity.sendWheelSpeed(mActivity.mLeftStraightPwmValue, mActivity.mRightStraightPwmValue);
         mCommandHandler.postDelayed(new Runnable() {
@@ -60,6 +61,25 @@ public class Scripts {
     }
 
     public void farBallScript() {
+
+        mActivity.sendWheelSpeed(0,0);
+
+        removeBallAtLocation(mActivity.mFarBallLocation);
+
+        mCommandHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mActivity.sendWheelSpeed(0,0);
+
+                if (mActivity.mWhiteBallLocation != 0 ) {
+                    removeBallAtLocation(mActivity.mWhiteBallLocation);
+                }
+                if (mActivity.mState == GolfBallDeliveryActivity.State.FAR_BALL_SCRIPT) {
+                    mActivity.setState(GolfBallDeliveryActivity.State.DRIVE_TOWARDS_HOME);
+                }
+
+            }
+        }, ARM_REMOVAL_TIME);
 
     }
 

@@ -6,33 +6,26 @@
     density="tvdpi"
     format="10"
     plugin-version="3.1.0"
-    timestamp="1524594284681"
+    timestamp="1524765226870"
     token="5922866800571792059"
-    verifier="CLASS_ADDED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="547" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="69" />
+        duration="0" />
     <task
         name="verifier"
-        duration="57" />
-
-    <artifact
-        location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1524591696159"
+        timestamp="1524764138933"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -73,16 +66,9 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1524592862565"
-        verifier="METHOD_ADDED" >
-        <artifact
-            location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1524594284681"
-        verifier="CLASS_ADDED" >
+        ir-eligibility="METHOD_ADDED"
+        timestamp="1524765104738"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
@@ -90,5 +76,9 @@
             location="C:\Users\perkints\Documents\GitHub\ME435Competition\GolfBallDeliveryGpsOnly\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1524765226870"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
